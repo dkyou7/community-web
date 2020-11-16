@@ -30,4 +30,7 @@ public class Board implements Serializable {
     @OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private User user;
 
+    public Board(BoardType boardType) {
+        this.boardType = boardType;
+    }
 }
