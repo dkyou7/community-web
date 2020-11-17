@@ -23,3 +23,11 @@ logging:
   level:
     org.hibernate.SQL: debug
   # org.hibernate.type: trace
+
+kakao:
+  client:
+    clientId:
+    accessTokenUri: https://kauth.kakao.com/oauth/token
+    userAuthorizationUri: https://kauth.kakao.com/oauth/authorize
+  resource:
+    userInfoUri: https://kapi.kakao.com/v1/user/me

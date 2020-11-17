@@ -1,5 +1,6 @@
 package com.example.communityweb.domain;
 
+import com.example.communityweb.domain.enums.SocialType;
 import lombok.*;
 
 import javax.persistence.*;
@@ -25,5 +26,10 @@ public class User {
 
     private LocalDateTime createdDate;
     private LocalDateTime updatedDate;
+
+    private String principal;
+
+    @Enumerated(EnumType.STRING)
+    private SocialType socialType;
 
 }
