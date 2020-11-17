@@ -1,25 +1,19 @@
 package com.example.communityweb.domain.enums;
 
-import lombok.Getter;
-
-@Getter
 public enum SocialType {
     FACEBOOK("facebook"),
     GOOGLE("google"),
-    KAKAO("kakao");
+    KAKAO("kakao"),
+    NAVER("naver");
 
     private final String ROLE_PREFIX = "ROLE_";
     private String name;
 
-    SocialType(String name){
-        this.name = name;
-    }
+    SocialType(String name) { this.name = name; }
 
-    public String getRoleType(){
-        return ROLE_PREFIX + name.toUpperCase();
-    }
+    public String getRoleType() { return ROLE_PREFIX + name.toUpperCase(); }
 
-    public boolean isEquals(String authority){
-        return this.getRoleType().equals(authority);
-    }
+    public String getValue() { return name; }
+
+    public boolean isEquals(String authority) { return this.getRoleType().equals(authority);}
 }

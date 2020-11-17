@@ -1,5 +1,6 @@
 package com.example.communityweb;
 
+import com.example.communityweb.config.SecurityConfig;
 import com.example.communityweb.domain.Board;
 import com.example.communityweb.domain.User;
 import com.example.communityweb.domain.enums.BoardType;
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.stream.IntStream;
 
 @SpringBootApplication
